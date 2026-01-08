@@ -13,7 +13,7 @@ function App() {
     try {
       setLoading(true);
       const res = await axios.get(
-        "http://localhost:3000/api/v1/getallcontact"
+        "https://colledge-connect-intership-assigment.onrender.com/api/v1/getallcontact"
       );
       setContacts(res.data.data || []);
       console.log("fetched contact response --> ", res);

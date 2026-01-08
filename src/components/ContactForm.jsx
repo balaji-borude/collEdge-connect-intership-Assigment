@@ -44,7 +44,7 @@ function ContactForm({ onContactAdded }) {
     console.log("Submitted form --> :", formData);
     try {
       const response = await axios.post(
-        "http://localhost:3000/api/v1/contact",
+        "https://colledge-connect-intership-assigment.onrender.com/api/v1/contact",
         formData
       );
 
